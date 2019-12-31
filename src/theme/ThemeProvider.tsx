@@ -7,8 +7,6 @@ interface Props {
 }
 
 export const ThemeProvider: FC<Props> = ({ themeName, children }) => {
-  console.log(themeName);
-
   return (
     <StyledThemeProvider theme={themes[themeName]}>
       {children}
